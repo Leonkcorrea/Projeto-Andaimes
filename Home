@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'home.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Sistema(object):
+    def setupUi(self, Sistema):
+        Sistema.setObjectName("Sistema")
+        Sistema.setWindowModality(QtCore.Qt.NonModal)
+        Sistema.resize(1003, 425)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        Sistema.setFont(font)
+        Sistema.setSizeGripEnabled(False)
+        Sistema.setModal(False)
+        self.NovoContrato = QtWidgets.QPushButton(Sistema)
+        self.NovoContrato.setEnabled(True)
+        self.NovoContrato.setGeometry(QtCore.QRect(20, 30, 301, 161))
+        self.NovoContrato.setFlat(False)
+        self.NovoContrato.setObjectName("NovoContrato")
+        self.Historico = QtWidgets.QPushButton(Sistema)
+        self.Historico.setEnabled(True)
+        self.Historico.setGeometry(QtCore.QRect(350, 30, 301, 161))
+        self.Historico.setFlat(False)
+        self.Historico.setObjectName("Historico")
+        self.GerarArquivos = QtWidgets.QPushButton(Sistema)
+        self.GerarArquivos.setEnabled(True)
+        self.GerarArquivos.setGeometry(QtCore.QRect(680, 30, 301, 161))
+        self.GerarArquivos.setFlat(False)
+        self.GerarArquivos.setObjectName("GerarArquivos")
+        self.VisualizarContratos = QtWidgets.QPushButton(Sistema)
+        self.VisualizarContratos.setEnabled(True)
+        self.VisualizarContratos.setGeometry(QtCore.QRect(20, 220, 301, 161))
+        self.VisualizarContratos.setFlat(False)
+        self.VisualizarContratos.setObjectName("VisualizarContratos")
+        self.NovoContrato_3 = QtWidgets.QPushButton(Sistema)
+        self.NovoContrato_3.setEnabled(True)
+        self.NovoContrato_3.setGeometry(QtCore.QRect(350, 220, 301, 161))
+        self.NovoContrato_3.setFlat(False)
+        self.NovoContrato_3.setObjectName("NovoContrato_3")
+
+        self.retranslateUi(Sistema)
+        QtCore.QMetaObject.connectSlotsByName(Sistema)
+
+    def retranslateUi(self, Sistema):
+        _translate = QtCore.QCoreApplication.translate
+        Sistema.setWindowTitle(_translate("Sistema", "Sistema de Gerenciamento- Andaimes Piramides"))
+        self.NovoContrato.setText(_translate("Sistema", "Novo Contrato"))
+        self.Historico.setText(_translate("Sistema", "Abrir Histórico"))
+        self.GerarArquivos.setText(_translate("Sistema", "Gerar Arquivos"))
+        self.VisualizarContratos.setText(_translate("Sistema", "Visualizar Contratos\n"
+"Gerados"))
+        self.NovoContrato_3.setText(_translate("Sistema", "Visualizar Arquivos\n"
+"Gerados"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Sistema = QtWidgets.QDialog()
+    ui = Ui_Sistema()
+    ui.setupUi(Sistema)
+    Sistema.show()
+    sys.exit(app.exec_())
